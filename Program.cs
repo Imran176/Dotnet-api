@@ -1,6 +1,8 @@
 
 // Create the WebApplication builder.
 // It configures the application, loads settings, and manages services.
+using DotnetApi.Data;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Register controller services so the application can handle API controllers.
@@ -50,6 +52,8 @@ builder.Services.AddCors(options =>
             .AllowCredentials();
     });
 });
+
+builder.Services.AddScoped<IUserRepository, UserRepository>();
 
 // Build the application using the registered services and configuration.
 var app = builder.Build();
