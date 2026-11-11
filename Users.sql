@@ -1,5 +1,17 @@
 USE DotNetCourseDatabase;
 
+
+GO
+-- CREATE TABLE Project1AppSchema.Auth (
+--        Email NVARCHAR(50),
+--        PasswordHash VARBINARY(MAX),
+--        PasswordSalt VARBINARY(MAX),
+-- )
+
+SELECT *
+FROM   Project1AppSchema.Auth;
+
+
 GO
 SELECT [UserId],
        [FirstName],

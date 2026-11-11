@@ -1,3 +1,6 @@
+// DTOs are simple objects that contain only properties. 
+// They do not contain any business logic, validation rules, or database-tracking mechanisms. 
+
 namespace DotnetApi.Dtos;
 
 public partial class UserToAddDto
