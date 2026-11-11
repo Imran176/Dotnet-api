@@ -1,6 +1,5 @@
 USE DotNetCourseDatabase;
 
-
 GO
 SELECT [UserId],
        [FirstName],
@@ -9,6 +8,10 @@ SELECT [UserId],
        [Gender],
        [Active]
 FROM   Project1AppSchema.Users;
+
+SELECT *
+FROM   Project1AppSchema.Users AS Users
+WHERE  Users.Email = "test_user1@dev.com";
 
 SELECT [UserId],
        [Salary]

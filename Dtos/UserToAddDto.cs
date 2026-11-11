@@ -1,15 +1,14 @@
-namespace DotnetApi;
+namespace DotnetApi.Dtos;
 
-public partial class Users
+public partial class UserToAddDto
 {
-    public int UserId { get; set; }
     public string FirstName { get; set; }
     public string LastName { get; set; }
     public string Email { get; set; }
     public string Gender { get; set; }
     public bool Active { get; set; }
 
-    public Users()
+    public UserToAddDto()
     {
         if(FirstName == null)
         {
